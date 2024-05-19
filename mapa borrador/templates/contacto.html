@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
- <!-- Encabezado -->
+
  <header class="header">
     <nav>
-        <!-- logo -->
+        
         <div id="logo">
             <a href="../index.html">
                 <button class="corner-button">
@@ -23,7 +23,7 @@
                 </button>
             </a>
         </div>
-        <!-- Hipervinculos para el menu -->
+        
         <ul class="nav-links">
             <li>
                 <a href="recursos.html">Recursos</a>
@@ -39,7 +39,7 @@
             </li>
 
             <li>
-                <!-- mas adelante se aplicaran estilos especificos al texto y se agregara un icono -->
+                
                 <a href="#" class="btn-cac">
                     <i class="fas fa-sign-in-alt"></i>
 
@@ -50,12 +50,63 @@
     </nav>
 </header>
 <main>
-    <section>
-        <p>
-            <br><br><br><br><br><br>
-            En esta página agregaríamos nuestro contacto y demás.
-        </p>
+    
+    <section id="form-wrapper">
+        
+        <form action="#" id="formRegister" method="GET" novalidate>
+            <h2>Formulario de contacto</h2>
+            <div class="form-control">
+                <label >Nombre:</label>
+                <input type="text" name="firstname" id="firstname" required>
+               </div>
+               <div class="error" id="error-firstname"></div>
+               <div class="form-control">
+                <label>Apellido:</label>
+                <input type="text" name="lastname" id="lastname" required >
+               </div>
+                <div class="error" id="error-lastname"></div>
+                <div class="form-control">
+                    
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="error" id="error-email"></div>
+                <div class="form-control"></div>
+                <div class="form-control">
+                    <label id="label-select">Topico de consulta:</label>
+                    <select name="tipodeconsulta" id="tipodeconsula" class="form-select">
+                        <option value="">Elige el topico de la consulta</option>
+                        <option value="CN">Contacto </option>
+                        <option value="MS">Mapa Sonoro</option>
+                        <option value="AU">Audios</option>
+                        <option value="RG">Registro</option>
+                        <option value="OT">Otro</option>
+                        
+                        
+                    </select>
+                   </div>
+                   <div>
+                    <label for="msg">Consulta</label>
+                    <br>
+
+                    <textarea name="comentario" rows="13" cols="46" id="msg"></textarea>
+
+
+                   </div>
+                   <button type="submit">Enviar</button>
+                   <div class="form-terms">
+                    <div class="terms">
+                      <input type="checkbox"  id="terms" >
+                      <label for="terms">Acepto términos y condiciones</label>
+                    </div>
+                   </div>
+
+
+
+        </form>
+
     </section>
+
 </main> 
     <footer>
         <a href="">Términos y condiciones</a>
