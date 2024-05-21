@@ -43,8 +43,6 @@ font-size:2vw;
     background-color: var(--third-color);
 }
 
-
-
 nav{
     display: flex;
     justify-content: space-between;
@@ -122,8 +120,19 @@ nav{
     font-family: 'Nunito',sans-serif;
 
 }
+
+.text-main{
+    text-align: center;
+    padding: 1vw;
+}
+
 footer {
     background-color: var(--third-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vw;
+    padding: 0px 50px;
 
 }
 footer a{
