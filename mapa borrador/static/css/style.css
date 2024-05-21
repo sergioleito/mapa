@@ -449,3 +449,8 @@ body {
     border-top-right-radius: 0;
   }
 }
+.redes_soc{
+  display: flex;
+  align-items: right;
+  justify-content: right;
+};
