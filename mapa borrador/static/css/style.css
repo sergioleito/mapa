@@ -1,5 +1,5 @@
 :root{
-  --bg-color:#ebebeb;
+  --bg-color:rgb(228, 224, 224);
   --primary-color:#40282c;
   --secondary-color:#BFA08E;
   --third-color:#787167;
@@ -9,16 +9,14 @@
 
 }
 *{
-  margin: 0;
+  margin: 4px;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito',sans-serif;
 }
-.gallery {
-  max-width: 20vw;
-  align-items: center;
-}
+
 body{
+  font-family: 'Nunito', sans-serif;
   background-color:var(--bg-color);
 }
 a{
@@ -27,14 +25,19 @@ a{
 
 
 h1{
-  margin-top: 4.5vw;
+  margin-top: 6vw;
 }
 h2{
 color:var(--third-color);
-font-size:2vw;
+font-size:3vw;
+}
+
+h3{
+  color: var(--primary-color);
 }
 .header{
   background-color: var(--third-color);
+  margin: 0;
   color: #fff;
   position: fixed;
   top:0;
@@ -134,6 +137,7 @@ footer {
   background-color: var(--third-color);
   display: flex;
   padding: 10px 50px;
+  width: 100%;
 
 }
 footer a{
@@ -152,7 +156,7 @@ footer a{
   background-color: var(--secondary-color);
   font-family: 'Nunito',sans-serif;
   font-size: 16px;
-  margin:  50px auto;
+  margin:  10vw 20vw 30vw;
   padding: 40px 20px;
   width: 60%;
   display: flex;
@@ -458,4 +462,76 @@ body {
   align-items: right;
   justify-content: right;
 };
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
 
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Para centrar los contenidos en la tarjeta */
+}
+
+.card-header {
+  background-color: var(--third-color);
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* Asegura que el encabezado tome todo el ancho de la tarjeta*/ 
+}
+
+.card ul {
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+.card ul li {
+  margin: 5px 0;
+}
+
+.card ul li a {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%; /* Asegura que el contenedor de la imagen tome todo el ancho de la tarjeta */
+  height: 200px; /* Altura fija para todas las imágenes */
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+  border-radius: 5px; /* Opcional: para redondear las esquinas de las imágenes */
+}
+
+.contact_number{
+  background-color: var(--third-color);
+  padding: 0;
+  margin: auto;
+  color: var(--secondary-color);
+
+
+}
