@@ -1,4 +1,4 @@
-# Mapa Sonoro
+ Mapa Sonoro
 -------------------------
 GRUPO:       6
 INTEGRANTES: Ayala, Sergio Leonardo
@@ -15,3 +15,4 @@ Recursos (donde se puede descargar los sonidos),
 Contacto (Formulario para que se comuniquen con nosotros, con opciones de consultas),
 Quiénes somos (funciones y contacto de los integrantes) y 
 Inicio de sesión (Permitiría registrarse y luego iniciar sesión)
+
