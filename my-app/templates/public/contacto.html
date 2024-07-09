@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="../../static/assets/img/favicon.ico" rel="icon" type="image/x-icon">
+<link rel="stylesheet" href="../static/assets/css/style.css">
+<title>Contacto</title>
+
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <div id="logo">
+                <a href="index.html">
+                    <button class="corner-button">
+                        <span>Mapa Sonoro</span>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+<div class="container-contact register">
+    <div class="information">
+        <div class="info-childs">
+            <div><img src="../../static/assets/img/logo.png" alt="Logo mapa sonoro"></div>
+            <h2>Formulario de Contacto</h2>
+            <p>Podés hacernos cualquier tipo de sugerencia o consulta, luego de dejarnos tus datos para poder contactarte. </p>
+    </div>
+</div>
+
+<div class="form-information">
+        <div class="form-information-childs">
+            <h2>Consultas</h2>
+            <form class="form form-register" novalidate>
+        <div>
+        <label>
+            <i class='bx bx-user' ></i>
+                                <input type="text" placeholder="Nombre y Apellido" name="user" >
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <i class='bx bx-user' ></i>
+                                <input type="lastname" placeholder="Teléfono" name="lastname">
+                            </label>
+                    </div>
+                        <div>
+                            <label >
+                                <i class='bx bx-envelope' ></i>
+                                <input type="email" placeholder="Email" name="email" >
+                            </label>
+                        </div>
+                <div class="form-control">
+                    <label id="label-select">Topico de consulta:</label>
+                    <select name="tipodeconsulta" id="tipodeconsulta" class="form-select">
+                        <option value="">Elige el topico de la consulta</option>
+                        <option value="CN">Contacto </option>
+                        <option value="MS">Mapa Sonoro</option>
+                        <option value="AU">Audios</option>
+                        <option value="RG">Registro</option>
+                        <option value="OT">Otro</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="msg">Consulta</label>
+                    <br>
+                    <textarea name="comentario" rows="13" cols="46" id="msg"></textarea>
+                </div>
+                <div class="form-terms">
+                    <div class="terms">
+                <input type="checkbox"  id="terms">
+                <label for="terms">Acepto términos y condiciones</label>
+                    </div>
+                </div>
+
+                        <input type="submit" value="Enviar">
+                        <div class="alerta-error">Todos los campos son obligatorios</div>
+                        <div class="alerta-exito">Te registraste correctamente</div>
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <footer>
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas frecuentes</a>
+        <a href="">Ayuda</a>
+        <div class="redes_soc">
+            <img src="../static/assets/img/facebook.png" alt="Facebook">
+            <img src="../static/assets/img/instagram.png" alt="Instagram">
+            <img src="../static/assets/img/whatsapp.png" alt="WhatsApp">
+        </div>
+    </footer>
+</body>
+</html>
